@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registro Veterinario de Mascota</title>
+
+	<link rel="stylesheet" type="text/css" href="style_form.css">
+</head>
+<body>
+
+	
+	<div id="container">
+
+		<h1 id="title">Registro Veterinario de Mascota</h1>
+		
+		<h2>Información del dueño</h2>
+
+		<form>
+			
+				<label for="nombre">Nombre Completo:</label>
+				<input type="text" name="nombre" required>
+
+				<label for>Correo Electrónico</label>
+				<input type="email" name="correo" >
+
+				<label for="tel">Teléfono:</label>
+				<input type="tel" id="tel" name="tel" 
+				pattern="\d{10}" maxlength="10" inputmode="numeric" 
+				required>
+
+			
+		<h2>Información de la mascota</h2>	
+			
+			
+
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" required>
+
+				<label for="dob">Fecha de Nacimiento:</label>
+				<input type="date" name="dob">
+
+				<label>Género:</label>
+				<div class="radios">
+					<div>
+						<input type="radio" id="macho" name="genero" value="masculino">
+						<label for="macho">Macho</label>
+					</div>
+					<div>
+						<input type="radio" id="hembra" name="genero" value="femenino">
+						<label for="hembra">Hembra</label>
+					</div>
+				</div>
+				
+				<label>Especie:</label>
+				<select>
+					<option value="">Seleccionar:</option>
+					<option value="sonora">Perro</option>
+					<option value="sonora">Gato</option>
+					<option value="sonora">Ave</option>
+					<option value="sonora">Reptil</option>
+				</select>
+
+				<label>Foto de la mascota:</label>
+				<input type="file" name="perfil" accept="image/*">
+
+				<label>Color o características físicas:</label>
+				<textarea>
+					
+				</textarea>
+				
+				<label>Vacunas aplicadas:</label>
+				<textarea>
+					
+				</textarea>
+				
+				<label>Notas adicionales:</label>
+				<textarea>
+					
+				</textarea>
+				
+				<div class="checkbox">
+					<label for="esterilizado">Esterilizado</label>
+					<input type="checkbox" id="esterilizado" name="esterilizado">
+				</div>
+				
+				
+				<button id="boton"type="submit">REGISTRAR</button>
+		
+		</form>
+
+
+	</div>
+	
+</body>
+</html>

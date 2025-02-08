@@ -1,0 +1,100 @@
+body {
+	background: #138d75;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+	align-items: center;
+}
+
+#title {
+    text-align: center;
+    color: #1f618d;
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+#container{
+	background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+}
+
+label{
+	font-weight: bold;
+}
+
+input, select, textarea {
+	width: 100%;
+	padding: 8px;
+	margin: 8px;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+button {
+	width: 30%;
+	background: #3498db;
+	color: white;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: none;
+	float: right; /* Para que le boton este a la derecha */
+}
+
+button:hover{
+	background: #1f618d;
+}
+
+
+.radios {
+	display: flex;
+    gap: 15px; /* Espaciado entre cada radio */
+
+}
+.radios input {
+	margin: 0;
+}
+
+.radios label{
+	display: flex;
+    align-items: right-side;
+	font-weight: normal;
+
+}
+
+.radios div {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* Espaciado entre el input y el label */
+ 
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+	justify-content: flex-start; /* Alinea a la izquierda */
+    gap: 5px; /* Espacio entre el checkbox y el texto */
+}
+
+.checkbox label {
+    font-weight: normal;
+    margin-left: 5px; /* Espacio entre el checkbox y el texto */
+}
+.checkbox div {
+	display: inline-flex;
+    align-items: center;
+    gap: 5px; /* Espaciado entre el input y el label */
+}
+
+.checkbox input {
+    margin: 2;/* Controla el espacio entre el checkbox y el texto */
+	width: 16px; /* Asegura tamaño estándar del checkbox */
+    height: 16px;
+
+}
